@@ -111,9 +111,9 @@ class SiderMenu extends Component {
               showMe = true;
           }
           if (item.key === active) {
-            document.title = `Syshub | ${item.pageTitle}`;
+            document.title = `Martkist Hub | ${item.pageTitle}`;
           } else if (active === 'home') {
-            document.title = 'Syshub';
+            document.title = 'Martkist Hub';
           }
           return showMe &&
             (item.showPlatform === 'all' ||

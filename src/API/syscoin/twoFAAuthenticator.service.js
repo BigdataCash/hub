@@ -7,7 +7,7 @@ export const getAuthQRCode = email => {
   let qrCodeURL;
   let url = speakeasy.otpauthURL({
     algorithm: 'sha1',
-    issuer: 'Syshub',
+    issuer: 'Martkist Hub',
     secret: secret,
     label: email
   });

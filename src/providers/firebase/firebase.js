@@ -28,7 +28,6 @@ const FB_STORAGE_AVATARS = 'avatars';
 
 class Firebase {
   constructor() {
-    /* firebase.initializeApp(config, 'fbSyshub'); */
     firebase.initializeApp(config);
 
     this.firebaseApp = firebase;
