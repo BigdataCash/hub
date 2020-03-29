@@ -24,7 +24,7 @@ import palette from './styles/palette';
 import JssProvider from 'react-jss/lib/JssProvider';
 import { generateClassName } from './Helpers/classNameJssProvider';
 
-const sysHubTheme = createMuiTheme({
+const hubTheme = createMuiTheme({
   palette: {
     primary: { main: palette.primary },
     secondary: { main: palette.secondary }
@@ -41,7 +41,7 @@ class App extends Component {
     await this.tick();
     await this.detectProposalUrl();
     await this.registerHooks();
-    console.log(`sysHub::v${process.env.REACT_APP_VERSION}`);
+    console.log(`hub::v${process.env.REACT_APP_VERSION}`);
   }
 
   async componentDidMount() {
@@ -93,7 +93,7 @@ class App extends Component {
     const { classes } = this.props;
 
     return (
-      <MuiThemeProvider theme={sysHubTheme}>
+      <MuiThemeProvider theme={hubTheme}>
         <JssProvider generateClassName={generateClassName}>
           <div className={classes.root}>
             <Favicon url={require('./assets/img/png_favicon.png')} />

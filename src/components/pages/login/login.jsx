@@ -13,7 +13,7 @@ import runTasks from '../../../Helpers/hooks';
 import { withFirebase } from '../../../providers/firebase';
 
 // Import Services
-import { verifyAuthCode } from '../../../API/syscoin/twoFAAuthenticator.service';
+import { verifyAuthCode } from '../../../API/martkist/twoFAAuthenticator.service';
 
 // Import Material-ui components
 import { Button, Grid, FormGroup } from '@material-ui/core';
@@ -240,7 +240,7 @@ class Login extends Component {
           }
         />
         <Grid item className={style} md={12} xs={12}>
-          <h1 className="title">Login to SysHub</h1>
+          <h1 className="title">Login to Martkist Hub</h1>
           <Grid item md={12} xs={12} className="form__container">
             <form
               onSubmit={event => this.login(event)}

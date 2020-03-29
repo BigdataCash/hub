@@ -25,7 +25,7 @@ Develop:
     - production
   script:
     - yarn build:development
-    - firebase use --token $FIREBASE_TOKEN syshub-dev
+    - firebase use --token $FIREBASE_TOKEN martkist-hub-testnet
     - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
 
 Staging:
@@ -36,7 +36,7 @@ Staging:
     - master
   script:
     - yarn build:development
-    - firebase use --token $FIREBASE_TOKEN syshub-dev
+    - firebase use --token $FIREBASE_TOKEN martkist-hub-testnet
     - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
 
 # it should deploys in production
@@ -48,5 +48,5 @@ Production:
     - production
   script:
     - yarn build:production
-    - firebase use --token $FIREBASE_TOKEN syshub-61377
+    - firebase use --token $FIREBASE_TOKEN martkist-hub
     - firebase deploy -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN

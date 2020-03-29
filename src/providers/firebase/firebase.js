@@ -446,7 +446,7 @@ class Firebase {
   /**
    *
    * @param {string} descriptionID = the ID used to store in DB,
-   * you can find it in the proposal gObject from syscoin
+   * you can find it in the proposal gObject from Martkist
    */
   getProposalDescription = async descriptionID => {
     const proposalDescription = await this.getDocument(

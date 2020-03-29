@@ -6,7 +6,7 @@ import injectSheet from 'react-jss';
 
 // Imports provider HOC's & services
 import { withFirebase } from '../../../providers/firebase';
-import { nextGovernanceRewardInfo } from '../../../API/syscoin/proposals.service';
+import { nextGovernanceRewardInfo } from '../../../API/martkist/proposals.service';
 
 //import for text editor
 import { EditorState, convertToRaw, ContentState } from 'draft-js';
@@ -915,7 +915,7 @@ class NewProposal extends Component {
             ) : null}
             <div className="receipt-text">
               {this.state.pValue
-                ? 'Prepare command is ready to be copied. Please copy and paste it into Syscoin Q.T console for payment txid.'
+                ? 'Prepare command is ready to be copied. Please copy and paste it into Martkist Q.T console for payment txid.'
                 : 'No Prepare command has been generated.'}
               <CopyToClipboard
                 text={this.state.pValue}
@@ -977,7 +977,7 @@ class NewProposal extends Component {
           ) : null}
           <div className="receipt-text">
             {this.state.sValue
-              ? 'Submit command is ready to be copied. Please copy and paste it into Syscoin Q.T console to submit your proposal. This could take a couple minutes, please be patient.'
+              ? 'Submit command is ready to be copied. Please copy and paste it into Martkist Q.T console to submit your proposal. This could take a couple minutes, please be patient.'
               : 'No Submit command has been generated.'}
             <CopyToClipboard
               text={this.state.sValue}

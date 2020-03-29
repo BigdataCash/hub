@@ -10,9 +10,9 @@ const baseApiURL = process.env.REACT_APP_MARTK_MN_API;
 /**---------------------------------------------------------------------------- */
 
 const PROVIDERS = {
-  coinmarketcap: `${baseApiURL}/curl?url="https://api.coinmarketcap.com/v1/ticker/syscoin/"`,
+  coinmarketcap: `${baseApiURL}/curl?url="https://api.coinmarketcap.com/v1/ticker/martkist/"`,
   coingecko:
-    "https://api.coingecko.com/api/v3/coins/syscoin?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false"
+    "https://api.coingecko.com/api/v3/coins/martkist?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false"
 };
 
 const activeProvider = "coingecko";

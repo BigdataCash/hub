@@ -34,20 +34,20 @@ class SiderMenu extends Component {
   }
 
   render() {
-    const { classes, active, deviceType, sysInfo } = this.props;
+    const { classes, active, deviceType, martkInfo } = this.props;
 
     const style = deviceType === 'mobile' ? classes.mRoot : classes.root;
 
-    const usdChangeRate = sysInfo.sysPrice
-      ? `${parseFloat(sysInfo.sysPrice.price_usd).toFixed(8)} USD`
+    const usdChangeRate = martkInfo.sysPrice
+      ? `${parseFloat(martkInfo.sysPrice.price_usd).toFixed(8)} USD`
       : '';
-    // const btcChangeRate = sysInfo.sysPrice ? `${parseFloat(sysInfo.sysPrice.price_btc).toFixed(8)} BTC` : ''; <-- Temporarily commented
-    // const satChangeRate = sysInfo.sysPrice ? `${Math.floor(parseFloat(sysInfo.sysPrice.price_btc).toFixed(8) * 100000000)} SATOSHI` : ''; <-- Temporarily commented
+    // const btcChangeRate = martkInfo.sysPrice ? `${parseFloat(martkInfo.sysPrice.price_btc).toFixed(8)} BTC` : ''; <-- Temporarily commented
+    // const satChangeRate = martkInfo.sysPrice ? `${Math.floor(parseFloat(martkInfo.sysPrice.price_btc).toFixed(8) * 100000000)} SATOSHI` : ''; <-- Temporarily commented
     const masternodes =
-      sysInfo.mnRegistered && sysInfo.mnCount
-        ? `${sysInfo.mnRegistered} / ${sysInfo.mnCount.enabled}`
+      martkInfo.mnRegistered && martkInfo.mnCount
+        ? `${martkInfo.mnRegistered} / ${martkInfo.mnCount.enabled}`
         : '';
-    const totUsers = sysInfo.users ? sysInfo.users : '';
+    const totUsers = martkInfo.users ? martkInfo.users : '';
 
     return (
       <div className={style}>
@@ -62,7 +62,7 @@ class SiderMenu extends Component {
               />
               <span>
                 {' '}
-                <b>{`SYSCOIN: `}</b> {usdChangeRate}
+                <b>{`MARTKIST: `}</b> {usdChangeRate}
               </span>
             </Col>
             <Col span={9} className="stats__wrapper">
@@ -143,7 +143,7 @@ class SiderMenu extends Component {
 const stateToProps = state => {
   return {
     menuItems: state.app.menuItems,
-    sysInfo: {
+    martkInfo: {
       mnCount: state.sysStats.mnCount,
       mnRegistered: state.sysStats.mnRegistered,
       sysPrice: state.sysStats.sysPrice,

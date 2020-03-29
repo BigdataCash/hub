@@ -10,7 +10,7 @@ function xmlParser(xmlObj) {
   }
 }
 
-const mediumChannels = ['@BlockchainFoundry', '@syscoincommunity', '@syscoin'];
+const mediumChannels = ['@martkistcommunity', '@martkist'];
 
 export default {
   getMediumPosts: () => {

@@ -1,6 +1,6 @@
 import constants from "../constants";
-import * as mnService from "../../API/syscoin/masternodes.service";
-import * as sysService from "../../API/syscoinTiker/syscoinTiker.service";
+import * as mnService from "../../API/martkist/masternodes.service";
+import * as sysService from "../../API/martkistTiker/martkistTiker.service";
 
 export default {
   getSysMnRegistered: mnRegistered => {

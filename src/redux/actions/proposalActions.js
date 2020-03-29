@@ -1,5 +1,5 @@
 import constants from '../constants';
-import * as proposalService from '../../API/syscoin/proposals.service';
+import * as proposalService from '../../API/martkist/proposals.service';
 
 export default {
   getProposals: () => {

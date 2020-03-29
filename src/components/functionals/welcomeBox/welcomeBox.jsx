@@ -30,27 +30,14 @@ class WelcomeBox extends Component {
               <h1 className="heading">In Case You Missed It</h1>
               <Divider />
               <div className="addvertiseText">
-                <ul className="wellcomBoxTextList">
-                  <li className="listItem">
-                    4 new proposals has been submitted.{' '}
-                  </li>
-                  <li className="listItem">
-                    142 masternodes has been added.
-                  </li>
-                  <li className="listItem">
-                    SBIN remain budget: 129217 SYS.
-                  </li>
-                  <li className="listItem">
-                    1 new post by Blockchain Foundry. 
-                  </li>
-                </ul>
+                We just launched! Visit usfor regular updates.
               </div>
             </GridListTile>
           </GridList>
           {!this.props.logged && (
             <div className="joinBtn">
               <Button variant= 'raised' className="btn" onClick={this.props.onJoin}>
-                <span className="btnText"> Join SysHub </span>
+                <span className="btnText"> Join Martkist Hub </span>
               </Button>
             </div>
           )}

@@ -231,7 +231,7 @@ class Register extends Component {
 
     return (
       <Grid item className={style} md={12} xs={12}>
-        <h1 className="title">JOIN SYSHUB</h1>
+        <h1 className="title">JOIN MARTKIST HUB</h1>
         <Grid item md={12} xs={12} className="form__container">
           <Form
             ref={form => {

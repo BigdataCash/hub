@@ -15,7 +15,7 @@ class AppFooter extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <Footer className="footer">{`SysHub @ 2018`}</Footer>
+        <Footer className="footer">{`Martkist Hub @ 2020`}</Footer>
       </div>
     );
   }

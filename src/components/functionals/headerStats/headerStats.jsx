@@ -12,27 +12,27 @@ import headerStatsStyle from "./headerStats.style";
 
 class HeaderStats extends Component {
   render() {
-    const { classes, deviceType, sysInfo } = this.props;
+    const { classes, deviceType, martkInfo } = this.props;
     //Platform style switcher
     const style = deviceType === "mobile" ? classes.mRoot : classes.root;
 
-    const usdChangeRate = sysInfo.sysPrice
-      ? `${parseFloat(sysInfo.sysPrice.usd).toFixed(8)} USD`
+    const usdChangeRate = martkInfo.sysPrice
+      ? `${parseFloat(martkInfo.sysPrice.usd).toFixed(8)} USD`
       : "";
-    const btcChangeRate = sysInfo.sysPrice
-      ? `${parseFloat(sysInfo.sysPrice.btc).toFixed(8)} BTC`
+    const btcChangeRate = martkInfo.sysPrice
+      ? `${parseFloat(martkInfo.sysPrice.btc).toFixed(8)} BTC`
       : "";
-    const satChangeRate = sysInfo.sysPrice
+    const satChangeRate = martkInfo.sysPrice
       ? `${Math.floor(
-          parseFloat(sysInfo.sysPrice.btc).toFixed(8) * 100000000
+          parseFloat(martkInfo.sysPrice.btc).toFixed(8) * 100000000
         )} SATOSHI`
       : "";
     const masternodes =
-      sysInfo.mnRegistered && sysInfo.mnCount
-        ? `${sysInfo.mnRegistered} / ${sysInfo.mnCount.enabled}`
+      martkInfo.mnRegistered && martkInfo.mnCount
+        ? `${martkInfo.mnRegistered} / ${martkInfo.mnCount.enabled}`
         : "";
-    const totUsers = sysInfo.users ? sysInfo.users : "";
-    const sysCaption = deviceType === "mobile" ? ":" : "SYSCOIN:";
+    const totUsers = martkInfo.users ? martkInfo.users : "";
+    const sysCaption = deviceType === "mobile" ? ":" : "MARTKIST:";
     //console.clear();
     return (
       <Grid container className={style}>
@@ -90,7 +90,7 @@ HeaderStats.propTypes = {
 function mapStateToProps(state) {
   //pass the providers
   return {
-    sysInfo: {
+    martkInfo: {
       mnCount: state.sysStats.mnCount,
       mnRegistered: state.sysStats.mnRegistered,
       sysPrice: state.sysStats.sysPrice,

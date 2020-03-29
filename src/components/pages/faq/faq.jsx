@@ -175,7 +175,7 @@ class Faq extends Component {
       <div className={style}>
 
         <h1 className="title">
-          SYSHUB FAQ
+          Martkist Hub FAQ
       </h1>
 
         <div className="faqs-div">

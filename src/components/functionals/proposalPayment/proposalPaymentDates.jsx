@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Import Services
-import { calculatePaymentDates } from '../../../API/syscoin/proposals.service';
+import { calculatePaymentDates } from '../../../API/martkist/proposals.service';
 
 // Import lib components
 import LinearProgress from '@material-ui/core/LinearProgress';

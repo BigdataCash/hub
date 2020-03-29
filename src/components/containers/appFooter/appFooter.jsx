@@ -9,7 +9,7 @@ const AppFooter = () => {
   return (
     <div style={appFooterStyle.wrapper}>
       <div style={appFooterStyle.footerTxt}>
-        {`© 2018 Syscoin Foundation with contributions from Blockchain Foundry Inc.`}{' '}
+        {`© 2020 Team Martkist`}{' '}
       </div>
       <div style={appFooterStyle.footerVersion}>{`v${appVersion}`}</div>
     </div>

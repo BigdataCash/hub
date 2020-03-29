@@ -19,32 +19,32 @@ class Stats extends Component {
   getValue(field) {
     return {
       changeRate: {
-        usdChangeRate: this.props.sysInfo.sysPrice
-          ? parseFloat(this.props.sysInfo.sysPrice.usd).toFixed(8)
+        usdChangeRate: this.props.martkInfo.sysPrice
+          ? parseFloat(this.props.martkInfo.sysPrice.usd).toFixed(8)
           : "",
-        btcChangeRate: this.props.sysInfo.sysPrice
-          ? parseFloat(this.props.sysInfo.sysPrice.btc).toFixed(8)
+        btcChangeRate: this.props.martkInfo.sysPrice
+          ? parseFloat(this.props.martkInfo.sysPrice.btc).toFixed(8)
           : "",
-        satoshiChangeRate: this.props.sysInfo.sysPrice
+        satoshiChangeRate: this.props.martkInfo.sysPrice
           ? Math.floor(
-              parseFloat(this.props.sysInfo.sysPrice.btc).toFixed(8) * 100000000
+              parseFloat(this.props.martkInfo.sysPrice.btc).toFixed(8) * 100000000
             )
           : "",
-        percent_change_1h: this.props.sysInfo.sysPrice
-          ? parseFloat(this.props.sysInfo.sysPrice.price_change_percentage_1h)
+        percent_change_1h: this.props.martkInfo.sysPrice
+          ? parseFloat(this.props.martkInfo.sysPrice.price_change_percentage_1h)
           : "",
-        percent_change_24h: this.props.sysInfo.sysPrice
-          ? parseFloat(this.props.sysInfo.sysPrice.price_change_percentage_24h)
+        percent_change_24h: this.props.martkInfo.sysPrice
+          ? parseFloat(this.props.martkInfo.sysPrice.price_change_percentage_24h)
           : "",
-        percent_change_7d: this.props.sysInfo.sysPrice
-          ? parseFloat(this.props.sysInfo.sysPrice.price_change_percentage_7d)
+        percent_change_7d: this.props.martkInfo.sysPrice
+          ? parseFloat(this.props.martkInfo.sysPrice.price_change_percentage_7d)
           : ""
       },
       masternodes:
-        this.props.sysInfo.mnRegistered && this.props.sysInfo.mnCount
-          ? `${this.props.sysInfo.mnRegistered} / ${this.props.sysInfo.mnCount.enabled}`
+        this.props.martkInfo.mnRegistered && this.props.martkInfo.mnCount
+          ? `${this.props.martkInfo.mnRegistered} / ${this.props.martkInfo.mnCount.enabled}`
           : "",
-      totUsers: this.props.sysInfo ? this.props.sysInfo.users : "",
+      totUsers: this.props.martkInfo ? this.props.martkInfo.users : "",
       governance: {
         payoutDate: this.props.governance
           ? this.props.governance.payoutDate
@@ -187,7 +187,7 @@ class Stats extends Component {
     return (
       <div className={style}>
         <h1 className="statsHeading">
-          <Equalizer className="headingIcon" /> SYSHub Stats
+          <Equalizer className="headingIcon" /> Martkist Hub Stats
         </h1>
         <div className="statsMainDiv">
           <GridList
@@ -225,7 +225,7 @@ function mapStateToProps(state) {
   //pass the providers
   return {
     cards: state.sysStats.cards,
-    sysInfo: {
+    martkInfo: {
       mnCount: state.sysStats.mnCount,
       mnRegistered: state.sysStats.mnRegistered,
       sysPrice: state.sysStats.sysPrice,
