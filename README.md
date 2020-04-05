@@ -21,7 +21,7 @@ To register your masternodes, go to https://hub.martkist.org and sign up.
 
 # Developed by Team Martkist
 
-Development site: https://hubtest.martkist.org/
+Development site: https://hub.test.martkist.org/
 
 ## Scripts
 

@@ -21,7 +21,7 @@ function smartParse(json) {
 
 const proposals = (state = initialState, action) => {
   switch (action.type) {
-    case constants.SYS_PROPOSALS_GET: {
+    case constants.MARTK_PROPOSALS_GET: {
       let proposal = {};
       let list = [];
 
@@ -43,16 +43,16 @@ const proposals = (state = initialState, action) => {
       };
     }
 
-    case constants.SYS_PROPOSALS_CHECK:
+    case constants.MARTK_PROPOSALS_CHECK:
       return { ...state, checkStatus: action.data };
 
-    case constants.SYS_PROPOSALS_PREPARE:
+    case constants.MARTK_PROPOSALS_PREPARE:
       return { ...state, prepareReceipt: action.data };
 
-    case constants.SYS_PROPOSALS_SUBMIT:
+    case constants.MARTK_PROPOSALS_SUBMIT:
       return { ...state, submitReceipt: action.data };
 
-    case constants.SYS_PROPOSAL_VOTE:
+    case constants.MARTK_PROPOSAL_VOTE:
       return { ...state, voteStatus: action.data };
 
     default:

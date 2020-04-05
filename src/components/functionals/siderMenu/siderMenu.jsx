@@ -38,11 +38,11 @@ class SiderMenu extends Component {
 
     const style = deviceType === 'mobile' ? classes.mRoot : classes.root;
 
-    const usdChangeRate = martkInfo.sysPrice
-      ? `${parseFloat(martkInfo.sysPrice.price_usd).toFixed(8)} USD`
+    const usdChangeRate = martkInfo.martkistPrice
+      ? `${parseFloat(martkInfo.martkistPrice.price_usd).toFixed(8)} USD`
       : '';
-    // const btcChangeRate = martkInfo.sysPrice ? `${parseFloat(martkInfo.sysPrice.price_btc).toFixed(8)} BTC` : ''; <-- Temporarily commented
-    // const satChangeRate = martkInfo.sysPrice ? `${Math.floor(parseFloat(martkInfo.sysPrice.price_btc).toFixed(8) * 100000000)} SATOSHI` : ''; <-- Temporarily commented
+    // const btcChangeRate = martkInfo.martkistPrice ? `${parseFloat(martkInfo.martkistPrice.price_btc).toFixed(8)} BTC` : ''; <-- Temporarily commented
+    // const satChangeRate = martkInfo.martkistPrice ? `${Math.floor(parseFloat(martkInfo.martkistPrice.price_btc).toFixed(8) * 100000000)} SATOSHI` : ''; <-- Temporarily commented
     const masternodes =
       martkInfo.mnRegistered && martkInfo.mnCount
         ? `${martkInfo.mnRegistered} / ${martkInfo.mnCount.enabled}`
@@ -57,7 +57,7 @@ class SiderMenu extends Component {
             <Col span={15} className="stats__wrapper">
               <img
                 alt="a"
-                src={require('../../../assets/img/png_stasts_sys.png')}
+                src={require('../../../assets/img/png_stasts_martkist.png')}
                 className="icon"
               />
               <span>
@@ -144,10 +144,10 @@ const stateToProps = state => {
   return {
     menuItems: state.app.menuItems,
     martkInfo: {
-      mnCount: state.sysStats.mnCount,
-      mnRegistered: state.sysStats.mnRegistered,
-      sysPrice: state.sysStats.sysPrice,
-      users: state.sysStats.users
+      mnCount: state.martkistStats.mnCount,
+      mnRegistered: state.martkistStats.mnRegistered,
+      martkistPrice: state.martkistStats.martkistPrice,
+      users: state.martkistStats.users
     }
   };
 };

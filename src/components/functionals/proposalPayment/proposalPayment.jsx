@@ -47,7 +47,7 @@ class ProposalPayment extends Component {
       const month_remaining = Math.round(timeDiff / 1000 / 60 / 60 / 24 / 30);
       const payment_type =
         nPayment > 1
-          ? `${nPayment} Payments.  Total of ${payment_amount * nPayment} SYS`
+          ? `${nPayment} Payments.  Total of ${payment_amount * nPayment} MARTK`
           : 'One-time payment';
       this.setState({
         days_remaining,
@@ -93,7 +93,7 @@ class ProposalPayment extends Component {
                     className="input-field"
                     placeholder="Amount"
                     onChange={e => {}}
-                    value={this.state.oneTimePayment + ' SYS'}
+                    value={this.state.oneTimePayment + ' MARTK'}
                     disabled={true}
                   />
                 </Typography>

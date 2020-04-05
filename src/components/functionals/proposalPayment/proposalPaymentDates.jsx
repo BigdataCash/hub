@@ -37,7 +37,7 @@ const PaymentDate = ({ epoch }) => {
         {isPayed && <i className="far fa-check-square" />}
       </div>
       <div className="paymentDateItemDate">
-        {yearDayMonth(epoch * 1000, 'usa')}
+        {yearDayMonth(epoch * 1000, 'iso')}
       </div>
     </div>
   );

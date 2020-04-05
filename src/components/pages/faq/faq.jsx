@@ -14,7 +14,7 @@ const faqQuestions = [
     section: 'General',
     questions: [
       {
-        question: 'HOW DO I CONVERT MT SYSCOIN 1.0 SYSCOIN 2.0?',
+        question: 'HOW DO I CONVERT MT MARTKIST 1.0 MARTKIST 2.0?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
@@ -26,7 +26,7 @@ const faqQuestions = [
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
-        question: 'HOW DO I SEND SYSCOIN TO SOMEONE?',
+        question: 'HOW DO I SEND MARTKIST TO SOMEONE?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       }
     ]
@@ -35,7 +35,7 @@ const faqQuestions = [
     section: 'Tutorials',
     questions: [
       {
-        question: 'HOW DO I CONVERT MT SYSCOIN 1.0 SYSCOIN 2.0?',
+        question: 'HOW DO I CONVERT MT MARTKIST 1.0 MARTKIST 2.0?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
@@ -47,7 +47,7 @@ const faqQuestions = [
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
-        question: 'HOW DO I SEND SYSCOIN TO SOMEONE?',
+        question: 'HOW DO I SEND MARTKIST TO SOMEONE?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       }
     ]
@@ -56,7 +56,7 @@ const faqQuestions = [
     section: 'Getting Started',
     questions: [
       {
-        question: 'HOW DO I CONVERT MT SYSCOIN 1.0 SYSCOIN 2.0?',
+        question: 'HOW DO I CONVERT MT MARTKIST 1.0 MARTKIST 2.0?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
@@ -68,7 +68,7 @@ const faqQuestions = [
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
-        question: 'HOW DO I SEND SYSCOIN TO SOMEONE?',
+        question: 'HOW DO I SEND MARTKIST TO SOMEONE?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       }
     ]
@@ -78,7 +78,7 @@ const faqQuestions = [
     section: 'Alises',
     questions: [
       {
-        question: 'HOW DO I CONVERT MT SYSCOIN 1.0 SYSCOIN 2.0?',
+        question: 'HOW DO I CONVERT MT MARTKIST 1.0 MARTKIST 2.0?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
@@ -90,7 +90,7 @@ const faqQuestions = [
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
-        question: 'HOW DO I SEND SYSCOIN TO SOMEONE?',
+        question: 'HOW DO I SEND MARTKIST TO SOMEONE?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       }
     ]
@@ -100,7 +100,7 @@ const faqQuestions = [
     section: 'Market Place',
     questions: [
       {
-        question: 'HOW DO I CONVERT MT SYSCOIN 1.0 SYSCOIN 2.0?',
+        question: 'HOW DO I CONVERT MT MARTKIST 1.0 MARTKIST 2.0?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
@@ -112,7 +112,7 @@ const faqQuestions = [
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
-        question: 'HOW DO I SEND SYSCOIN TO SOMEONE?',
+        question: 'HOW DO I SEND MARTKIST TO SOMEONE?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       }
     ]
@@ -122,7 +122,7 @@ const faqQuestions = [
     section: 'Digital Certificates',
     questions: [
       {
-        question: 'HOW DO I CONVERT MT SYSCOIN 1.0 SYSCOIN 2.0?',
+        question: 'HOW DO I CONVERT MT MARTKIST 1.0 MARTKIST 2.0?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
@@ -134,7 +134,7 @@ const faqQuestions = [
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
-        question: 'HOW DO I SEND SYSCOIN TO SOMEONE?',
+        question: 'HOW DO I SEND MARTKIST TO SOMEONE?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       }
     ]
@@ -144,7 +144,7 @@ const faqQuestions = [
     section: 'Encrypted Messaging',
     questions: [
       {
-        question: 'HOW DO I CONVERT MT SYSCOIN 1.0 SYSCOIN 2.0?',
+        question: 'HOW DO I CONVERT MT MARTKIST 1.0 MARTKIST 2.0?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
@@ -156,7 +156,7 @@ const faqQuestions = [
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       },
       {
-        question: 'HOW DO I SEND SYSCOIN TO SOMEONE?',
+        question: 'HOW DO I SEND MARTKIST TO SOMEONE?',
         answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       }
     ]

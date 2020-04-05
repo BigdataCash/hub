@@ -17,7 +17,7 @@ const PROVIDERS = {
 
 const activeProvider = "coingecko";
 
-export const getSysPrice = actionType => {
+export const getMartkistPrice = actionType => {
   return coingeckoFetcher(`${PROVIDERS[activeProvider]}`, null, actionType);
 };
 

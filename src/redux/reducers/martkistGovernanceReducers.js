@@ -8,7 +8,7 @@ const initialState = {
 
 const governance = (state = initialState, action) => {
   switch (action.type) {
-    case constants.SYS_GOVERNANCE_INFO: {
+    case constants.MARTK_GOVERNANCE_INFO: {
       const { rewardDate, votingDeadline, nextSuperBlockBudget } = action.data;
       return {
         ...state,

@@ -16,15 +16,15 @@ class HeaderStats extends Component {
     //Platform style switcher
     const style = deviceType === "mobile" ? classes.mRoot : classes.root;
 
-    const usdChangeRate = martkInfo.sysPrice
-      ? `${parseFloat(martkInfo.sysPrice.usd).toFixed(8)} USD`
+    const usdChangeRate = martkInfo.martkistPrice
+      ? `${parseFloat(martkInfo.martkistPrice.usd).toFixed(8)} USD`
       : "";
-    const btcChangeRate = martkInfo.sysPrice
-      ? `${parseFloat(martkInfo.sysPrice.btc).toFixed(8)} BTC`
+    const btcChangeRate = martkInfo.martkistPrice
+      ? `${parseFloat(martkInfo.martkistPrice.btc).toFixed(8)} BTC`
       : "";
-    const satChangeRate = martkInfo.sysPrice
+    const satChangeRate = martkInfo.martkistPrice
       ? `${Math.floor(
-          parseFloat(martkInfo.sysPrice.btc).toFixed(8) * 100000000
+          parseFloat(martkInfo.martkistPrice.btc).toFixed(8) * 100000000
         )} SATOSHI`
       : "";
     const masternodes =
@@ -32,7 +32,7 @@ class HeaderStats extends Component {
         ? `${martkInfo.mnRegistered} / ${martkInfo.mnCount.enabled}`
         : "";
     const totUsers = martkInfo.users ? martkInfo.users : "";
-    const sysCaption = deviceType === "mobile" ? ":" : "MARTKIST:";
+    const martkistCaption = deviceType === "mobile" ? ":" : "MARTKIST:";
     //console.clear();
     return (
       <Grid container className={style}>
@@ -40,11 +40,11 @@ class HeaderStats extends Component {
           <div className="changeRate">
             <img
               alt="a"
-              src={require("../../../assets/img/png_stasts_sys.png")}
+              src={require("../../../assets/img/png_stasts_martkist.png")}
               className="icon"
               onClick={() => this.props.setPage("home")}
             />
-            <span className="TxtBold">{sysCaption}</span>
+            <span className="TxtBold">{martkistCaption}</span>
             <div className="changeValue">
               <i>{usdChangeRate}</i>
               <i>{btcChangeRate}</i>
@@ -91,10 +91,10 @@ function mapStateToProps(state) {
   //pass the providers
   return {
     martkInfo: {
-      mnCount: state.sysStats.mnCount,
-      mnRegistered: state.sysStats.mnRegistered,
-      sysPrice: state.sysStats.sysPrice,
-      users: state.sysStats.users
+      mnCount: state.martkistStats.mnCount,
+      mnRegistered: state.martkistStats.mnRegistered,
+      martkistPrice: state.martkistStats.martkistPrice,
+      users: state.martkistStats.users
     }
   };
 }

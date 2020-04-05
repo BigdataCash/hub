@@ -2,10 +2,10 @@ import constants from '../constants';
 import * as proposalService from '../../API/martkist/proposals.service';
 
 export default {
-  getSysGovernanceInfo: () => {
+  getMartkistGovernanceInfo: () => {
     return dispatch => {
       return dispatch(
-        proposalService.getGovernanceInfo(constants.SYS_GOVERNANCE_INFO)
+        proposalService.getGovernanceInfo(constants.MARTK_GOVERNANCE_INFO)
       );
     };
   }

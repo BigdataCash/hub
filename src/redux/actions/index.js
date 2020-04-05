@@ -1,13 +1,13 @@
 import appActions from './appActions';
-import sysStatsActions from './sysStatsActions';
+import martkistStatsActions from './martkistStatsActions';
 import proposalActions from './proposalActions';
 import mediumActions from './mediumActions';
-import sysGovernanceActions from './sysGovernanceActions';
+import martkistGovernanceActions from './martkistGovernanceActions';
 
 export default {
   ...appActions,
-  ...sysStatsActions,
+  ...martkistStatsActions,
   ...proposalActions,
   ...mediumActions,
-  ...sysGovernanceActions
+  ...martkistGovernanceActions
 };

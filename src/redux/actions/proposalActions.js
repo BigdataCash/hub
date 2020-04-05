@@ -5,7 +5,7 @@ export default {
   getProposals: () => {
     return dispatch => {
       return dispatch(
-        proposalService.getProposalList(constants.SYS_PROPOSALS_GET)
+        proposalService.getProposalList(constants.MARTK_PROPOSALS_GET)
       );
     };
   },
@@ -13,7 +13,7 @@ export default {
   checkProposal: params => {
     return dispatch => {
       return dispatch(
-        proposalService.checkProposal(params, constants.SYS_PROPOSALS_CHECK)
+        proposalService.checkProposal(params, constants.MARTK_PROPOSALS_CHECK)
       );
     };
   },
@@ -21,7 +21,7 @@ export default {
   prepareProposal: params => {
     return dispatch => {
       return dispatch(
-        proposalService.prepareProposal(params, constants.SYS_PROPOSALS_PREPARE)
+        proposalService.prepareProposal(params, constants.MARTK_PROPOSALS_PREPARE)
       );
     };
   },
@@ -29,7 +29,7 @@ export default {
   submitProposal: params => {
     return dispatch => {
       return dispatch(
-        proposalService.submitProposal(params, constants.SYS_PROPOSALS_SUBMIT)
+        proposalService.submitProposal(params, constants.MARTK_PROPOSALS_SUBMIT)
       );
     };
   },
@@ -37,7 +37,7 @@ export default {
   voteOnProposal: params => {
     return dispatch => {
       return dispatch(
-        proposalService.voteOnProposal(params, constants.SYS_PROPOSAL_VOTE)
+        proposalService.voteOnProposal(params, constants.MARTK_PROPOSAL_VOTE)
       );
     };
   }

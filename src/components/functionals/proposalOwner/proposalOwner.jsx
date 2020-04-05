@@ -79,7 +79,7 @@ class ProposalOwner extends Component {
                 </Typography>
                 <div className="collateralHashInfo">
                   <a
-                    href={`https://chainz.cryptoid.info/sys/tx.dws?${
+                    href={`https://martkistexplorer.com/tx/${
                       this.state.collateralHash
                     }`}
                     target="_blank"

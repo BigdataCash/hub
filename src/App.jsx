@@ -68,8 +68,8 @@ class App extends Component {
   async tick() {
     const mnRegistered = await this.firebase.getMasternodesTotalCount();
     const userRegistered = await this.firebase.getDBnUsers();
-    this.props.getSysGovernanceInfo();
-    return await this.props.getSysInfo(mnRegistered, userRegistered);
+    this.props.getMartkistGovernanceInfo();
+    return await this.props.getMartkistInfo(mnRegistered, userRegistered);
   }
   registerHooks() {
     registerDbTasksHooks({ provider: this.firebase });
@@ -119,12 +119,12 @@ const stateToProps = state => {
 const dispatchToProps = dispatch => {
   return {
     setCurrentUser: user => dispatch(actions.setCurrentUser(user)),
-    getSysInfo: (mnRegistered, userRegistered) => {
+    getMartkistInfo: (mnRegistered, userRegistered) => {
       return (
-        dispatch(actions.getSysPrice()),
-        dispatch(actions.getSysMnCount()),
-        dispatch(actions.getSysMnRegistered(mnRegistered)),
-        dispatch(actions.getSysUserRegistered(userRegistered))
+        dispatch(actions.getMartkistPrice()),
+        dispatch(actions.getMartkistMnCount()),
+        dispatch(actions.getMartkistMnRegistered(mnRegistered)),
+        dispatch(actions.getMartkistUserRegistered(userRegistered))
       );
     },
     setPage: page => dispatch(actions.setPage(page)),
@@ -134,7 +134,7 @@ const dispatchToProps = dispatch => {
       dispatch(actions.setProposalContainer(container)),
     setProposalShow: propHash => dispatch(actions.setProposalShow(propHash)),
     setLoading: value => dispatch(actions.loading(value)),
-    getSysGovernanceInfo: () => dispatch(actions.getSysGovernanceInfo())
+    getMartkistGovernanceInfo: () => dispatch(actions.getMartkistGovernanceInfo())
   };
 };
 

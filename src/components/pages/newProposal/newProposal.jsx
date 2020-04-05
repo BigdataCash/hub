@@ -785,13 +785,13 @@ class NewProposal extends Component {
                   value={this.state.amount}
                   onChange={this.getAmount}
                 />
-                {` SYS`}
+                {` MARTK`}
               </Col>
               <Col span={deviceType === 'mobile' ? 24 : 8}>
                 <label>Payment Address</label>
                 <Input
                   type="text"
-                  placeholder="sys1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                  placeholder="mkt1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
                   value={this.state.address}
                   onChange={this.getAddress}
                 />
@@ -806,7 +806,7 @@ class NewProposal extends Component {
                     <p className="">
                       {`This proposal will result in ${
                         this.state.paymentQuantity
-                      } payments of ${this.state.amount} sys`}
+                      } payments of ${this.state.amount} MARTK`}
                     </p>
                     <div className="">
                       <div className="">{`  Payout dates approximately:`}</div>
@@ -814,7 +814,7 @@ class NewProposal extends Component {
                         {this.state.proposalPayoutDates.map((epoch, index) => {
                           return (
                             <div key={index}>
-                              {yearDayMonth(epoch * 1000, 'usa')}
+                              {yearDayMonth(epoch * 1000, 'iso')}
                             </div>
                           );
                         })}
@@ -823,7 +823,7 @@ class NewProposal extends Component {
                     <p />
                     <p className="">
                       {`Total amount: ${this.state.totalAmount ||
-                        this.state.amount} SYS`}
+                        this.state.amount} MARTK`}
                     </p>
                   </div>
                 </Col>

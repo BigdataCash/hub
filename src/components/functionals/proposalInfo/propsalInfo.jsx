@@ -25,7 +25,7 @@ class ProposalInfo extends Component {
           )}
         </h1>
         <div className="proposalDetail">
-        <span>{`${paymentAmount} SYS ${paymentType} `}</span>
+        <span>{`${paymentAmount} MARTK ${paymentType} `}</span>
 
         {daysRemaining < 30 ? (
           <span>{`(${daysRemaining} Day${

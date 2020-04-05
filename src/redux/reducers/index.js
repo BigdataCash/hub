@@ -2,15 +2,15 @@ import { combineReducers } from 'redux';
 
 //Reducer imports
 import app from './appReducers';
-import sysStats from './sysStatsReducers';
+import martkistStats from './martkistStatsReducers';
 import proposals from './proposalReducers';
 import mediumPosts from './mediumReducers';
 import mnInfo from './mnInfoReducer';
-import governance from './sysGovernanceReducers';
+import governance from './martkistGovernanceReducers';
 
 export default combineReducers({
   app,
-  sysStats,
+  martkistStats,
   proposals,
   mediumPosts,
   mnInfo,

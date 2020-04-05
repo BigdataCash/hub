@@ -146,8 +146,8 @@ class DashBoard extends Component {
 const stateToProps = state => {
   return {
     proposals: state.proposals,
-    //    totalNodes: state.sysStats.value.general.registered_masternodes_verified * 0.1,
-    mnCount: state.sysStats.mnCount || {},
+    //    totalNodes: state.martkistStats.value.general.registered_masternodes_verified * 0.1,
+    mnCount: state.martkistStats.mnCount || {},
     currentUser: state.app.currentUser,
     showContainer: state.app.dashBoard.showContainer,
     selectedProposal: state.app.dashBoard.selectedProposal,

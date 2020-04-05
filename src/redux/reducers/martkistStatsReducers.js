@@ -3,7 +3,7 @@ import constants from "../constants";
 const initialState = {
   cards: [
     {
-      img: "png_stasts_sys.png",
+      img: "png_stasts_martkist.png",
       key: "changeRate",
       text: ["USD", "BTC", "SATOSHI"]
     },
@@ -52,20 +52,20 @@ function smartParse(json, def) {
   }
 }
 
-const sysStats = (state = initialState, action) => {
+const martkistStats = (state = initialState, action) => {
   switch (action.type) {
-    case constants.SYS_STATS_PRICE_GET: {
-      const sysPrice = smartParse(action.data, []);
-      console.log("ACZ sysPrice -->", sysPrice);
-      return { ...state, sysPrice };
+    case constants.MARTK_STATS_PRICE_GET: {
+      const martkistPrice = smartParse(action.data, []);
+      console.log("ACZ martkistPrice -->", martkistPrice);
+      return { ...state, martkistPrice };
     }
-    case constants.SYS_STATS_TMN_GET: {
+    case constants.MARTK_STATS_TMN_GET: {
       return { ...state, mnCount: action.data };
     }
-    case constants.SYS_STATS_RMN_GET: {
+    case constants.MARTK_STATS_RMN_GET: {
       return { ...state, mnRegistered: action.data };
     }
-    case constants.SYS_STATS_USER_GET: {
+    case constants.MARTK_STATS_USER_GET: {
       return { ...state, users: action.data };
     }
     default:
@@ -73,4 +73,4 @@ const sysStats = (state = initialState, action) => {
   }
 };
 
-export default sysStats;
+export default martkistStats;
