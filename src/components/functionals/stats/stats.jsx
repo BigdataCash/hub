@@ -95,11 +95,11 @@ class Stats extends Component {
               Powered by{" "}
               <a
                 className="changeTxtLink"
-                href="https://www.coingecko.com"
+                href="https://erex.io/exchange/MARTK/BTC/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                CoinGecko
+                EREX
               </a>
             </span>
           </div>
