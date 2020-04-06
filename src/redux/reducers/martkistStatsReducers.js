@@ -5,13 +5,13 @@ const initialState = {
     {
       img: "png_stasts_martkist.png",
       key: "changeRate",
-      text: ["USD", "BTC", "SATOSHI"]
+      text: ["USD", "BTC", "Satoshi"]
     },
     {
       img: "png_stats_gov.png",
       key: "governance",
       text: [
-        "GOVERNANCE INFO",
+        "Governance Status",
         [
           "Next Payout Date",
           "Block Height",
@@ -23,12 +23,12 @@ const initialState = {
     {
       img: "png_menu_masternodes_selected.png",
       key: "masternodes",
-      text: ["REGISTERED MASTERNODES"]
+      text: ["Registered Masternodes"]
     },
     {
       img: "png_stats_users.png",
       key: "totUsers",
-      text: ["ALL USERS"]
+      text: ["Registered Users"]
     }
   ],
   totMn: 0,

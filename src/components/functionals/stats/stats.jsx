@@ -186,9 +186,6 @@ class Stats extends Component {
 
     return (
       <div className={style}>
-        <h1 className="statsHeading">
-          <Equalizer className="headingIcon" /> Martkist Hub Stats
-        </h1>
         <div className="statsMainDiv">
           <GridList
             cols={deviceType === "mobile" ? 2 : 3}

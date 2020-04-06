@@ -8,10 +8,10 @@ const basicColors = {
 
   secondary: 'rgba(26, 188, 156, 1)',
 
-  grey: 'rgba(189, 195, 199, 1)',
+  grey: 'rgba(97,67,191,0.5)',
   greyLight: 'rgb(213, 239, 242)',
-  greyDark: 'rgba(70, 71, 69, 1)',
-  greyHover: 'rgba(189, 195, 199, 0.3)',
+  greyDark: 'rgba(97,67,191,0.6)',
+  greyHover: 'rgba(97,67,191,0.3)',
 
   red: 'rgba(214, 20, 20, 1)',
   redHover: 'rgba(214, 20, 20, 0.3)',
@@ -22,7 +22,7 @@ const basicColors = {
 
   transparentBlack: 'rgba(0, 0, 0, 0.70)',
 
-  boxShadow: '-1px 18px 20px -18px rgba(0,0,0,0.25)'
+  boxShadow: '-1px 18px 20px -18px rgba(0,0,0,0.5)'
 };
 
 const themeColors = {

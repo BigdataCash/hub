@@ -16,7 +16,7 @@ export default {
     height: '60px',
     width: '100%',
     padding: '10px',
-    backgroundColor: greyDark,
+    backgroundColor: palette.primary,
     fontWeight: 'semibold'
   },
   footerTxt: {
