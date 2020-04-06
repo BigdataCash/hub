@@ -46,7 +46,7 @@ export default {
       marginLeft: '4%',
       marginTop: 40,
       borderRadius: 5,
-      background: 'rgb(240, 242, 245)',
+      background: 'rgb(213, 239, 242);',
       height: '30%',
       '& .commentHeading': {
         color: greyDark,

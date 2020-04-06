@@ -1,15 +1,15 @@
 const basicColors = {
   white: 'rgba(255, 255, 255, 1)',
 
-  primary: 'rgba(25, 145, 204, 1)',
-  primaryLight: 'rgba(83, 165, 204, 1)',
-  primaryDark: 'rgba(0, 115, 168, 1)',
+  primary: '#61B6BF',
+  primaryLight: '#78B8BF',
+  primaryDark: '#4CB3BF',
   primaryHover: 'rgba(25, 145, 204, 0.3)',
 
   secondary: 'rgba(26, 188, 156, 1)',
 
   grey: 'rgba(189, 195, 199, 1)',
-  greyLight: 'rgba(240, 242, 245, 1)',
+  greyLight: 'rgb(213, 239, 242)',
   greyDark: 'rgba(70, 71, 69, 1)',
   greyHover: 'rgba(189, 195, 199, 0.3)',
 

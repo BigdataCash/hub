@@ -33,7 +33,7 @@ export default {
       marginLeft: '4%',
       marginTop: 10,
       borderRadius: 5,
-      background: 'rgb(240, 242, 245)',
+      background: 'rgb(213, 239, 242);',
       boxShadow: '5px 5px 20px ' + gray,
 
       height: 175,

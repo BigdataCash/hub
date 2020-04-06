@@ -9,7 +9,7 @@ export default {
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'stretch',
-      backgroundColor: '#1991CC',
+      backgroundColor: palette.primaryDark,
       height: '70px',
       margin: '10px',
       fontSize: '20px',
