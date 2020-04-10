@@ -8,8 +8,6 @@ const baseApiURL = process.env.REACT_APP_MARTK_MN_API;
 
 /**---------------------------------------------------------------------------- */
 
-const mediumFeed = 'https://medium.com/feed/';
-
 export const getMediumUserPosts = user => {
-  return HTTPAsync.onlyGet(`${baseApiURL}/curl?url=${mediumFeed}${user}`, null);
+  return HTTPAsync.onlyGet(`${baseApiURL}/feed`, null);
 };
