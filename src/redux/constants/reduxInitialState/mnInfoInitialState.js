@@ -15,7 +15,7 @@ export default {
     {
       key: '3',
       url:'https://martkistexplorer.com/',
-      img: 'img/explorer.png',
+      img: 'img/explorer.jpeg',
       title: 'Martkist Block Explorer'
     },
     {
