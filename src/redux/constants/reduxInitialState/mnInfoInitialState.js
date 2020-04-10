@@ -3,16 +3,26 @@ export default {
     {
       key: '1',
       url:'http://martkist.org',
-      img: 'img/nodesWorldMap.png',
-      title: 'Martkist.org',
-      brief: 'Martkist information',
+      img: 'img/martkist.png',
+      title: 'Marktist Information'
     },
     {
       key: '2',
       url:'https://masternodecap.com/coins/MARTK',
-      img: 'https://masternodecap.com/img/1/logo_text_52.png',
-      title: 'MasterNodeCap',
-      brief: 'Masternode monitoring services',
+      img: 'img/masternodecap.png',
+      title: 'Masternode Monitoring Services'
     },
+    {
+      key: '3',
+      url:'https://martkistexplorer.com/',
+      img: 'img/explorer.png',
+      title: 'Martkist Block Explorer'
+    },
+    {
+      key: '4',
+      url:'https://pecuniaplatform.io/coin-details/Martkist',
+      img: 'img/pecunia.png',
+      title: 'Pecunia Masternode Hosting'
+    }
   ]
 };
