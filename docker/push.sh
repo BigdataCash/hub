@@ -1,0 +1,1 @@
+docker push martkist/hub-$2:v$1

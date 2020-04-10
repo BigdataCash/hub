@@ -1,0 +1,1 @@
+docker build -t martkist/hub-$2:v$1 . --build-arg tag=v$1 --build-arg env=$2
